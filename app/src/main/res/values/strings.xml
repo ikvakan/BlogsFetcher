@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Blogs Fetcher</string>
+    <string name="tumblr_fetcher">Tumblr fetcher</string>
+    <string name="fetch_blogs">Fetch blogs</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_blog_txt">Blog</string>
+    <string name="tv_blog_tools_txt">marvel blog</string>
+    <string name="tv_type_tools_text">photo</string>
+    <string name="tv_summary_tools_text">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</string>
+    <string name="tv_summary_text">Summary</string>
+    <string name="tv_type_text">Type</string>
+</resources>

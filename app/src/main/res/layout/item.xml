@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/card_elevation"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="9dp"
+    app:cardElevation="20dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/card_layout_margin"
+        android:background="@color/cardview_light_background"
+        android:orientation="vertical"
+        android:padding="@dimen/card_layout_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="@dimen/iv_avatar_width"
+                android:layout_height="@dimen/iv_avatar_height"
+                android:padding="@dimen/iv_avatar_padding"
+                tools:src="@tools:sample/avatars"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/layout_margin_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_blog_txt"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/tv_label_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvBlog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/tv_margin_bottom"
+                        tools:text="@string/tv_blog_tools_txt"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/tv_txt_size"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_type_text"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/tv_label_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/tv_type_tools_text"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/tv_txt_size"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_summary_text"
+                android:textSize="@dimen/tv_label_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="4"
+                android:maxLines="4"
+                tools:text="@string/tv_summary_tools_text"
+                android:textSize="@dimen/tv_txt_size"
+                android:textStyle="italic" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
